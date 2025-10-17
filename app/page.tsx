@@ -1,6 +1,5 @@
 import { Instagram, Facebook } from "lucide-react"
 import Logo from "@/components/logo"
-import { NewsletterEmbed } from "@/components/newsletter-embed"
 
 
 
@@ -95,8 +94,8 @@ export default function Home() {
             <p className="mt-3 text-brand-primary opacity-80 md:text-lg">
               Subscribe for race announcements, route previews, and community rides.
             </p>
-            <div className="mt-6 w-full">
-              <NewsletterEmbed />
+            <div className="mt-6">
+              <div className="ml-embedded" data-form="Qnpcou"></div>
             </div>
           </div>
         </div>
