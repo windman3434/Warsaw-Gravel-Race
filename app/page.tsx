@@ -89,25 +89,7 @@ export default function Home() {
           </a>
         </div>
 
-        // app/page.tsx (or any component)
-export default function Home() {
-  return (
-    <main>
-      {/* ...your content... */}
-
-      <section id="newsletter" className="px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-6">
-          Subscribe to the newsletter
-        </h2>
-
-        <div className="mx-auto max-w-xl">
-          {/* IMPORTANT: className (not class) */}
-          <div className="ml-embedded" data-form="Qnpcou"></div>
-        </div>
-      </section>
-    </main>
-  );
-}
+        
       </footer>
     </div>
   )
