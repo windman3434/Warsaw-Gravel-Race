@@ -64,7 +64,10 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 
-export const metadata: Metadata = { title: "Your site", description: "..." };
+export const metadata: Metadata = {
+  title: "Your site",
+  description: "...",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
