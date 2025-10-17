@@ -68,28 +68,37 @@ export default function Home() {
 
       {/* Footer Section */}
       <footer className="bg-brand-light min-h-screen flex items-center justify-center px-4 snap-start snap-always">
-        <div className="w-full flex justify-center items-center gap-12">
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Follow us on Instagram"
-            className="text-brand-primary hover:opacity-80 transition-opacity"
-          >
-            <Instagram size={64} strokeWidth={1.5} />
-          </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Follow us on Facebook"
-            className="text-brand-primary hover:opacity-80 transition-opacity"
-          >
-            <Facebook size={64} strokeWidth={1.5} className="fill-brand-primary" />
-          </a>
+        <div className="w-full max-w-3xl flex flex-col items-center gap-12 text-center">
+          <div className="flex justify-center items-center gap-12">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow us on Instagram"
+              className="text-brand-primary hover:opacity-80 transition-opacity"
+            >
+              <Instagram size={64} strokeWidth={1.5} />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow us on Facebook"
+              className="text-brand-primary hover:opacity-80 transition-opacity"
+            >
+              <Facebook size={64} strokeWidth={1.5} className="fill-brand-primary" />
+            </a>
+          </div>
+          <div className="w-full rounded-2xl border border-brand-primary bg-white/80 p-8 shadow-lg backdrop-blur">
+            <h2 className="text-brand-primary text-3xl font-bold md:text-4xl">Stay in the loop</h2>
+            <p className="mt-3 text-brand-primary opacity-80 md:text-lg">
+              Subscribe for race announcements, route previews, and community rides.
+            </p>
+            <div className="mt-6">
+              <div className="ml-embedded" data-form="Qnpcou"></div>
+            </div>
+          </div>
         </div>
-
-        
       </footer>
     </div>
   )
