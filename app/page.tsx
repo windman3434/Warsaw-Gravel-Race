@@ -1,26 +1,7 @@
 import { Instagram, Facebook } from "lucide-react"
 import Logo from "@/components/logo"
 
-// app/page.tsx
-export default function Home() {
-  return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory font-sans">
-      {/* ...your existing sections... */}
 
-      {/* Newsletter Section */}
-      <section id="newsletter" className="bg-brand-primary px-4 py-16 snap-start">
-        <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-6">
-          Subscribe to the newsletter
-        </h2>
-
-        {/* MailerLite embed target */}
-        <div className="mx-auto max-w-xl">
-          <div className="ml-embedded" data-form="Qnpcou"></div>
-        </div>
-      </section>
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -107,6 +88,26 @@ export default function Home() {
             <Facebook size={64} strokeWidth={1.5} className="fill-brand-primary" />
           </a>
         </div>
+
+        // app/page.tsx (or any component)
+export default function Home() {
+  return (
+    <main>
+      {/* ...your content... */}
+
+      <section id="newsletter" className="px-4 py-16">
+        <h2 className="text-3xl font-bold text-center mb-6">
+          Subscribe to the newsletter
+        </h2>
+
+        <div className="mx-auto max-w-xl">
+          {/* IMPORTANT: className (not class) */}
+          <div className="ml-embedded" data-form="Qnpcou"></div>
+        </div>
+      </section>
+    </main>
+  );
+}
       </footer>
     </div>
   )
